@@ -3,55 +3,68 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Contact = () => {
-    const images = [
-        "/images/home/welcome/image2.png",
-        "/images/home/welcome/image3.png",
-        "/images/home/welcome/image2.png",
-        "/images/home/welcome/image3.png",
-        "/images/home/welcome/image2.png",
-        "/images/home/welcome/image3.png",
-        "/images/home/welcome/image2.png",
-        "/images/home/welcome/image3.png",
-        "/images/home/welcome/image2.png",
-        "/images/home/welcome/image3.png",
-        "/images/home/welcome/image2.png",
-        "/images/home/welcome/image3.png",
-    ];
-
     return (
-        <section className="flex h-full w-full flex-col gap-4 bg-[#000] pb-12 pt-12 md:gap-8 md:pb-0 md:pt-20">
-            <div className="flex flex-col items-center gap-4 px-4 md:flex-row md:justify-between md:gap-0 md:px-[50px] 2xl:px-[140px]">
-                <h2 className="text-center font-playfair text-6xl font-[400] text-[#DDD1BD] md:text-9xl" style={{ fontVariant: "small-caps" }}>
-                    Scroll{" "}
-                </h2>
-                <Link href="" target="_blank" className="font-playfair text-2xl font-[400] capitalize tracking-[1px] text-[#ddd1bd] md:mr-10 md:mt-8 md:text-4xl">
-                    @bamboofresh
-                </Link>
-                <h2 className="text-center font-playfair text-6xl font-[400] text-[#DDD1BD] md:text-9xl" style={{ fontVariant: "small-caps" }}>
-                    Us{" "}
-                </h2>
-            </div>
-            <div className="relative">
-                <div
-                    style={{
-                        overflowX: "auto",
-                        msOverflowStyle: "none",
-                        scrollbarWidth: "none",
-                    }}
-                    className="flex snap-x snap-mandatory gap-4 scroll-smooth px-4 md:px-0"
-                >
-                    {images.map((src, index) => (
-                        <div key={index} className="w-full flex-shrink-0 snap-center md:w-1/3 lg:w-1/4 2xl:w-1/6">
-                            <Image src={src} alt={`Image ${index}`} width={500} height={500} className="h-[300px] w-full rounded-md object-cover md:h-[400px]" />
-                        </div>
-                    ))}
+        <section className="h-full w-full bg-[#000] px-4 py-12 sm:px-[10px] md:py-24">
+            <div className="hidden md:block">
+                <div className="flex flex-col items-center justify-center gap-1 md:flex-row md:gap-20">
+                    <h2 className="font-manrope text-center text-4xl font-[400] capitalize text-[#E7E6E6] md:text-6xl">Scroll Us</h2>
+                    <Link href={""} target="_blank">
+                        <h3 className="font-manrope text-center text-lg font-[400] capitalize text-[#DCB355] md:mt-4 md:text-2xl">@bamboofresh</h3>
+                    </Link>
                 </div>
-                {/* Hide scrollbar for Chrome, Safari using style jsx */}
-                <style jsx>{`
-                    div::-webkit-scrollbar {
-                        display: none;
-                    }
-                `}</style>
+            </div>
+            <div className="relative hidden h-[800px] md:block">
+                <div className="absolute left-[155px] top-[365px] hidden md:block 2xl:left-[470px]">
+                    <div className="relative">
+                        <div className="absolute -left-36 bottom-0 flex flex-col items-end gap-0">
+                            <h5 className="font-manrope text-center text-3xl font-[400] uppercase text-[rgba(255,255,255,0.84)]">KUNEFE</h5>
+                            <h5 className="font-manrope text-center text-lg font-[400] uppercase text-[rgba(255,255,255,0.84)]">CRISPY DELIGHT</h5>
+                        </div>
+                        <div className="absolute -right-44 top-0 flex flex-col items-start gap-0">
+                            <h5 className="font-manrope text-center text-3xl font-[400] uppercase text-[rgba(255,255,255,0.84)]">Çılbır</h5>
+                            <h5 className="font-manrope text-center text-lg font-[400] uppercase text-[rgba(255,255,255,0.84)]">poached delicacy</h5>
+                        </div>
+                        <div className="absolute -bottom-2 -right-[70px]">
+                            <h2 className="font-manrope text-center text-9xl font-[400] uppercase text-[#B99647]">F</h2>
+                        </div>
+                        <Image src="/images/home/contact/image4.png" width={316} height={328} alt="image" className="h-[240px] w-full object-cover 2xl:h-[300px]" />
+                    </div>
+                </div>
+                <div className="absolute left-[5px] top-[50px] hidden md:block 2xl:left-[160px]">
+                    <div className="relative">
+                        <div className="absolute -right-[70px] -top-6">
+                            <h2 className="font-manrope text-center text-9xl font-[400] uppercase text-[#B99647]">B</h2>
+                        </div>
+                        <Image src="/images/home/contact/image1.png" width={316} height={328} alt="image" className="h-[240px] w-full object-cover 2xl:h-[300px]" />
+                    </div>
+                </div>
+                <div className="absolute right-[5px] top-[50px] hidden md:block 2xl:right-[160px]">
+                    <div className="relative">
+                        <div className="absolute -left-72">
+                            <div className="relative">
+                                <div className="absolute -left-36 bottom-0 flex flex-col items-start gap-0">
+                                    <h5 className="font-manrope text-center text-3xl font-[400] uppercase text-[rgba(255,255,255,0.84)]">Baklava</h5>
+                                    <h5 className="font-manrope text-center text-lg font-[400] uppercase text-[rgba(255,255,255,0.84)]">Sweet layers</h5>
+                                </div>
+                                <Image src="/images/home/contact/image2.png" width={316} height={328} alt="image" className="h-[240px] w-full object-cover 2xl:h-[300px]" />
+                            </div>
+                        </div>
+                        <Image src="/images/home/contact/image3.png" width={316} height={328} alt="image" className="h-[240px] w-full object-cover 2xl:h-[300px]" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-col gap-6 px-4 md:hidden">
+                <div className="flex flex-col items-center justify-center gap-1 md:flex-row md:gap-20">
+                    <h2 className="font-manrope text-center text-4xl font-[400] capitalize text-[#E7E6E6] md:text-6xl">Scroll Us</h2>
+                    <Link href={""} target="_blank">
+                        <h3 className="font-manrope text-center text-lg font-[400] capitalize text-[#DCB355] md:mt-4 md:text-xl">@bamboofresh</h3>
+                    </Link>
+                </div>
+                <Image src="/images/home/contact/image1.png" width={316} height={328} alt="image" className="h-[260px] w-full object-cover" />
+                <Image src="/images/home/contact/image2.png" width={316} height={328} alt="image" className="h-[260px] w-full object-cover" />
+                <Image src="/images/home/contact/image3.png" width={316} height={328} alt="image" className="h-[260px] w-full object-cover" />
+                <Image src="/images/home/contact/image4.png" width={316} height={328} alt="image" className="h-[260px] w-full object-cover" />
             </div>
         </section>
     );

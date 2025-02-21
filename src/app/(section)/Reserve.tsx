@@ -6,25 +6,30 @@ import React from "react";
 
 const Reserve: React.FC = ({}) => {
     return (
-        <section className="relative flex h-full w-full items-center justify-center">
-            <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 bg-[#161616] lg:flex-row lg:gap-0">
-                <div className="h-full w-full overflow-hidden p-4 lg:w-1/2 lg:p-0">
-                    <Image src="/images/home/booking/dining.png" width={948} height={880} alt="private dining" className="h-auto w-full rounded-lg lg:rounded-none" />
+        <section className="h-full w-full bg-[#161616] px-4 py-12 md:px-[50px] md:py-24">
+            <div className="flex flex-col gap-6 md:gap-10">
+                <div className="flex flex-col items-center justify-center gap-1 md:flex-row md:gap-20">
+                    <h2 className="font-manrope text-center text-4xl font-[400] capitalize text-[#E7E6E6] md:text-6xl">Reserve</h2>
+                    <h3 className="font-manrope text-center text-lg font-[400] capitalize text-[#DCB355] md:mt-4 md:text-xl">OUR MENU</h3>
+                    <h2 className="font-manrope text-center text-4xl font-[400] capitalize text-[#E7E6E6] md:text-6xl">Table</h2>
                 </div>
-                <div className="flex h-full w-full flex-col items-center gap-6 p-6 md:items-start lg:w-1/2 lg:p-0 lg:pl-20">
-                    <h1 className="text-center font-playfair text-4xl font-[400] capitalize text-[#D3AF5E] sm:text-5xl lg:text-start">
-                        Reserve Your
-                        <br />
-                        Table at Bamboo
-                    </h1>
-                    <p className="font-inter max-w-[450px] text-center text-sm font-[300] leading-[140%] text-[#D7D7D7] md:text-start lg:text-base">
-                        Experience the charm of Twickenham hospitality. Visit Cafe Pera for a memorable outing filled with delicious meals and a cozy ambiance.
-                    </p>
-                    <Link href={"/contact"}>
-                        <Button className="flex flex-row gap-2 rounded-none bg-[#D3AF5E] px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#000]">
-                            Contact US <ArrowRight className="w-4" />
-                        </Button>
-                    </Link>
+                <div className="flex flex-col gap-6 md:flex-row md:gap-14">
+                    <div className="w-full md:w-[35%]">
+                        <Image className="h-[300px] w-full object-cover md:h-[450px]" src="/images/home/booking/image.png" width={536} height={517} alt="image" />
+                    </div>
+                    <div className="flex w-full flex-col items-center justify-center gap-4 md:mb-20 md:w-[30%] md:gap-8">
+                        <p className="font-manrope w-full max-w-[400px] text-center text-sm font-[300] uppercase tracking-[1.5px] text-[#fff] md:text-base">
+                            Bamboo Fresh brings you the rich flavors of Turkish cuisine with fresh, high-quality ingredients and authentic recipes. high-quality
+                        </p>
+                        <Link href={"/menu"}>
+                            <Button className="font-manrope rounded-full bg-[#DCB355] px-12 py-7 text-center text-sm font-[400] uppercase leading-[110%] text-[#000]">
+                                Book Now
+                            </Button>
+                        </Link>
+                    </div>
+                    <div className="hidden w-full md:block md:w-[35%]">
+                        <Image className="h-[300px] w-full object-cover md:h-[450px]" src="/images/home/booking/image.png" width={536} height={517} alt="image" />
+                    </div>
                 </div>
             </div>
         </section>

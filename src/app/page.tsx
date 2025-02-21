@@ -1,13 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Hero from "./(section)/Hero";
 import Welcome from "./(section)/Welcome";
-import Special from "./(section)/(special)/Special";
 import Reserve from "./(section)/Reserve";
 import Reviews from "./(section)/Review";
 import Footer from "@/components/Footer";
 import Contact from "./(section)/Contact";
 import Map from "./(section)/Map";
 import Discover from "./(section)/Serving";
+import Menu from "./(section)/Menu";
 
 export default function HomePage() {
     return (
@@ -17,7 +17,7 @@ export default function HomePage() {
                 <Hero />
                 <Welcome />
                 <Discover />
-                <Special />
+                <Menu />
                 <Reserve />
                 <Reviews />
                 <Contact />

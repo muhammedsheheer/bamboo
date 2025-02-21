@@ -59,6 +59,24 @@
     }
 }
 
+@font-face {
+    font-family: "Lavish";
+    src:
+        url("/font/Lavish.woff2") format("woff2"),
+        url("/font/Lavish.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src:
+        url("/font/Manrope.woff2") format("woff2"),
+        url("/font/Manrope.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @layer base {
     * {
         @apply border-border;

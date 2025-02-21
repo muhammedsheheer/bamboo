@@ -24,12 +24,12 @@ const Hero = ({}) => {
                 delay: -1.5,
             });
         tl.from(".down-button", 1, {
-            opacity: 0, // Start with opacity 0
-            duration: 1, // Animation duration (1 second)
-            delay: -0.5, // Optional delay before starting animation
+            opacity: 0,
+            duration: 1,
+            delay: -0.5,
         }).to(".down-button", 1, {
-            opacity: 1, // End with opacity 1
-            duration: -1.5, // Animation duration (1 second)
+            opacity: 1,
+            duration: -1.5,
             ease: "bounce.out",
         });
     }, []);
@@ -40,16 +40,11 @@ const Hero = ({}) => {
                 <div className="absolute left-0 top-0 h-full w-full overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("/images/home/hero/bg.png")' }}></div>
 
                 <div className="relative flex items-center justify-center px-4 md:mt-20 md:px-0">
-                    <div className="flex flex-col items-center justify-center gap-4 bg-black bg-opacity-80 px-6 py-6 md:px-36 md:py-24 lg:gap-6">
-                        <h3 className="text-center font-playfair text-3xl font-[400] capitalize leading-[110%] text-[#fff] lg:text-5xl">Opening soon</h3>
-                        <p className="font-inter w-full max-w-[450px] text-center text-sm font-[200] lowercase leading-[110%] lg:text-base">
-                            We’re cooking up something amazing! Delicious food and unforgettable vibes are coming your way soon. Stay tuned for the grand opening!
-                        </p>
-                        <div>
-                            <Button className="flex flex-row gap-2 rounded-none bg-[#D3AF5E] px-6 py-6 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[0.911px] text-[#000]">
-                                Contact US <ArrowRight className="w-4" />
-                            </Button>
-                        </div>
+                    <div className="flex flex-col items-center justify-center gap-1 bg-black bg-opacity-80 px-20 py-8 md:px-52 md:py-20">
+                        <h3 className="font-lavish text-center text-5xl font-[400] capitalize leading-[110%] tracking-[-2px] text-[#DCB355] md:text-7xl">
+                            bamboo <br /> Fresh
+                        </h3>
+                        <h6 className="font-manrope text-center text-base font-[400] uppercase text-[#DCB355] md:text-lg">THE SIGN OF GREAT TASTE</h6>
                     </div>
                 </div>
             </div>
